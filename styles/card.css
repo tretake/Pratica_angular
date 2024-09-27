@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 80%;
+    border: 1px solid gray;
+    display: flex;
+    -webkit-box-shadow: 4px 4px 13px 11px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 13px 11px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 13px 11px rgba(0,0,0,0.75);
+
+justify-content: space-between;
+
+}
+
+.left_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.left_card > a{
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+.left_card > p{
+    color: gray;
+}
+.left_card > span{
+    font-weight: 400;
+}
