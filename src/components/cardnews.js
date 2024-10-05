@@ -54,8 +54,10 @@ class cardnews extends HTMLElement{
 }
 .card{
     width: 80%;
+    margin: 10px;
     border: 1px solid gray;
     display: flex;
+
     justify-content: space-between;
     -webkit-box-shadow: 4px 4px 13px 11px rgba(0,0,0,0.75);
 -moz-box-shadow: 4px 4px 13px 11px rgba(0,0,0,0.75);
