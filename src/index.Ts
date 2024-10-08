@@ -1,23 +1,25 @@
 function minLength(length : number){
     return (target:any, key:string) =>{
+        //if(target  === undefined) {return}
+        // Define a property descriptor to handle the property access and assignment
         let _value = target[key];
 
         const getter = () => _value;
-        const setter = (value: string) => {
+        const setter = (value: string) =>{
             if(value.length < length)
             {
                 throw new Error(`tamanho menor do que ${length}`);
             }else{
-                _value = value
+                _value = value;
             }
         };
-
-        Object.defineProperty(target,key,{
+        Object.defineProperty(target,key, {
             get: getter,
-            set : setter,
-        });
+            set: setter,
 
-    }
+        });
+     
+    };
 
 }
 
@@ -31,5 +33,5 @@ class Api {
     }
 }
 
-const api = new Api("daidbsa");
+const api = new Api("sgyfty");
 console.log(api.name);
